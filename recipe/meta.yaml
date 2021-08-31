@@ -1,5 +1,5 @@
 {% set name = "auth0-python" %}
-{% set version = "3.17.0" %}
+{% set version = "3.18.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/auth0-python-{{ version }}.tar.gz
-  sha256: 7b21bf91859ea56ac3b665efe5e73340c65dfd30de01081ff334a18a35a188a6
+  sha256: 8e2b4917ea6e5da2efdeac893a32c57adcf14699e56e2e01292d13cc398245ef
 
 build:
   number: 0
