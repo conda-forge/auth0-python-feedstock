@@ -1,5 +1,5 @@
 {% set name = "auth0-python" %}
-{% set version = "3.24.1" %}
+{% set version = "4.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/auth0-python-{{ version }}.tar.gz
-  sha256: 62c2e177b9517879bd8632da9eb7668aedd5775fddea87b0e0e1e9a89b9dd096
+  sha256: 8336b91d8b718264df0bebbe5a5062b8e8a704d5d821f5416b9217f25af41e3f
 
 build:
   number: 0
@@ -17,17 +17,16 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - pyjwt >=1.7.1
+    - python >=3.7
     - requests >=2.14.0
+    - pyjwt >=2.6.0
 
 test:
   imports:
     - auth0
-    - auth0.v3
   commands:
     - pip check
   requires:
