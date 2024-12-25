@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/auth0_python-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/auth0_python-{{ version }}.tar.gz
   sha256: 5d36b7f26defa946c0a548dddccf0451fc62e9f8e61fd0138c5025ad2506ba8b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning >=1.0.0,<2.0.0
     - pip
   run:
     - urllib3 >=2.0.7,<3.0.0
-    - python >=3.8
+    - python >={{ python_min }}
     - aiohttp >=3.8.5,<4.0.0
     - pyjwt >=2.8.0,<3.0.0
     - cryptography >=43.0.1,<44.0.0
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/auth0/auth0-python
