@@ -1,5 +1,5 @@
 {% set name = "auth0-python" %}
-{% set version = "4.13.0" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/auth0_python-{{ version }}.tar.gz
-  sha256: 72f58bd26b078e3b493e4d24928cc75fa41842aae35cef488ed6f8db0fb701fb
+  sha256: deebf16e045b2cc2e85a011069cc8eabf072485dd75a1ab8f5a5bfdb024a3fbd
 
 build:
   noarch: python
@@ -21,6 +21,10 @@ requirements:
     - poetry-dynamic-versioning >=1.0.0,<2.0.0
     - pip
   run:
+    - httpx >=0.21.2
+    - pydantic >=1.9.2
+    - pydantic-core >=2.18.2
+    - typing_extensions >=4.0.0
     - urllib3 >=2.2.3
     - python >={{ python_min }}
     - aiohttp >=3.10.11
