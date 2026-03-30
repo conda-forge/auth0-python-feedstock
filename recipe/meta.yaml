@@ -1,5 +1,5 @@
 {% set name = "auth0-python" %}
-{% set version = "5.1.0" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/auth0_python-{{ version }}.tar.gz
-  sha256: 3c737146ced21f0b365147ff4c2948fa5180141754ac6a458a676b31718226a9
+  sha256: d947fb93012e333fe249415c722c44ae311c1df2942aa3015b97beed9e8538ef
 
 build:
   noarch: python
@@ -25,11 +25,11 @@ requirements:
     - pydantic >=1.9.2
     - pydantic-core >=2.18.2
     - typing_extensions >=4.0.0
-    - urllib3 >=2.2.3
+    - urllib3 >=2.3.0
     - python >={{ python_min }}
-    - aiohttp >=3.10.11
+    - aiohttp >=3.11.18
     - pyjwt >=2.8.0
-    - cryptography >=43.0.1
+    - cryptography >=44.0.0
     - requests >=2.32.3
 
 test:
