@@ -3,11 +3,11 @@ About auth0-python-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/auth0-python-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/auth0/auth0-python
+Home: https://auth0.com/
 
 Package license: MIT
 
-Summary: Auth0 Python SDK
+Summary: Auth0 Python SDK - Management and Authentication APIs
 
 Current build status
 ====================
