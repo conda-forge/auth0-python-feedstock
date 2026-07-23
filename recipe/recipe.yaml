@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "6.0.0"
+  version: "6.1.0"
 
 package:
   name: auth0-python
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/auth0-python/auth0_python-${{ version }}.tar.gz
-  sha256: 63d69ef99b64d0437087a7bbbafc899cf1ac2adb4515d3560371b9ceb1eee7db
+  sha256: 486d9e5764097f3f0c88176703b82c1d8225326dbac5805bc620a7b78bfe4c77
 
 build:
   number: 0
